@@ -1,46 +1,36 @@
-// let a = '1'
-// let b = prompt('Введите переменную')
-// switch(a) {
-//     case b:
-//         console.log('Верно')
-//         break
-//
-//     case b:
-//         console.log('Не верно')
-//         break
-//
-//     default:
-//         console.log('Не сработало')
-//         break
-// }
-// let a = +prompt('Введите месяц')
-// switch(a) {
-//     case 1:
-//     case 2:
-//     case 3:
-//         console.log('Зима')
-//         break
-//     case 4:
-//     case 5:
-//     case 6:
-//         console.log('Весна')
-//         break
-//     case 7:
-//     case 8:
-//     case 9:
-//         console.log('Лето')
-//         break
-//     case 10:
-//     case 11:
-//     case 12:
-//         console.log('Осень')
-//         break
-//
-//     default:
-//         console.log('Не сработало')
-//         break
-// }
-// let a = null
-// let b = undefined
-// let c = 1
-// alert(a ?? b ?? c)
+let a = document.querySelector('#one')
+let b = document.querySelector('.check')
+function sum(a, b) {
+    return a + b
+}
+b.onclick = function (){
+    a.innerHTML = `<h1>${sum(10,2)}</h1>`
+}
+function res0(a, b) {
+    return a + b
+}
+let q = document.querySelector('.plus')
+q.onclick = function (){
+    a.innerHTML = `<h1>${res0(10,2)}</h1>`
+}
+function res(a, b) {
+    return a * b
+}
+let c = document.querySelector('.multi')
+c.onclick = function (){
+    a.innerHTML = `<h1>${res(10,2)}</h1>`
+}
+function res1(a, b) {
+    return a / b
+}
+let d = document.querySelector('.division')
+d.onclick = function (){
+    a.innerHTML = `<h1>${res1(10,2)}</h1>`
+}
+function res2(a, b) {
+    return a - b
+}
+let e = document.querySelector('.minus')
+e.onclick = function (){
+    a.innerHTML = `<h1>${res2(10,2)}</h1>`
+}
